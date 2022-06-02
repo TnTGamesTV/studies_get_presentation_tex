@@ -1,0 +1,69 @@
+\documentclass[../../document.tex]{subfiles}
+\begin{document}
+
+\section*{Aufgabe 2}
+
+\subsection*{a)}
+
+\begin{equation*}
+    \bar{u} = \frac{1}{T} * \int_{t\cind{0} + \theta}^{t = t\cind{0}} u(t) dt = \frac{1}{2\pi} * \int_{\varphi\cind{0} + 2\pi}^{\omega t = \varphi\cind{0}} u(\omega t) d (\omega t) 
+\end{equation*}
+
+Aufteilen in 2 Integrale der Funktionen
+
+\(y(t) = (\frac{t}{s})^2\) und \(y(t) = 1 - \frac{(\frac{t}{s} - 1)}{2}\)
+
+Integrieren
+
+\begin{equation*}
+    \begin{split}
+        \bar{u} &= \frac{1}{T} * (\left[\frac{(\frac{t}{s})^3}{3}\right]_0^1 + \left[-\frac{(\frac{t}{s}-6)\frac{t}{s}}{4}\right]_1^3) = \frac{1}{T} * (\frac{1}{3} + 1) = \frac{4}{9}\\
+        \bar{y} &= 0,44\\
+        \left\lvert\bar{y}\right\rvert &= \bar{u} \\
+        y\cind{eff} &= \sqrt{\bar{u}}\text{, ???}\\
+    \end{split}
+\end{equation*}
+
+\subsection*{b)}
+
+?
+
+\subsection*{c)}
+
+Funktion in drei Teile Aufteilen
+
+\(0 \rightarrow \frac{T}{4}\), hoher Rechenaufwand
+
+\(\frac{T}{4} \rightarrow \frac{3T}{4}\), Umwandlung in Sägezahnimpulse
+
+\(\frac{3T}{4} \rightarrow \frac{4T}{4} \Rightarrow \frac{T}{4}\)
+
+\begin{equation*}
+    \begin{split}
+        u &= f(\frac{t}{s}) = U\cind{s} * \frac{4}{T} * (\frac{t}{s})\\
+        \left\lvert\bar{u}\right\rvert &= \frac{4}{T} * \int_{0}^{\frac{T}{4}} \left\lvert u \right\rvert * d (\frac{t}{s}) = \frac{4}{T} * \int_{0}^{\frac{T}{4}} U\cind{s} * \frac{4}{T} * (\frac{t}{s}) * d (\frac{t}{s}) \\
+        &= \frac{4}{T} * U\cind{s} * \frac{4}{T} * \left[ \frac{(\frac{t}{s})^2}{2} \right]_0^\frac{T}{4} = \frac{U\cind{s}}{2} \\
+        \bar{u} &= 0 \\
+        \left\lvert \bar{u} \right\rvert &= \frac{2}{2} = 1 \text{, } y = \frac{2}{\sqrt{3}} = 1,155\\
+    \end{split}
+\end{equation*}
+
+\subsection*{d)}
+
+Aufteilen
+
+\(y(\frac{t}{s}) = 2\) und \(y(\frac{t}{s}) = -\frac{2}{3}x + 2\)
+
+Integieren
+
+\(\frac{1}{T} * \left[ 2 ( \frac{t}{s} ) \right]_0^3 + \left[ - \frac{((\frac{t}{s} - 6))(\frac{t}{s})}{3} \right]_3^6 \)
+
+\begin{equation*}
+    \begin{split}
+        \bar{y} &= \frac{1}{6} * 9 = 1,5\\
+        \left\lvert \bar{y} \right\rvert &= \bar{y}\\
+        y\cind{eff} &= \sqrt{\bar{y}}\text{, ???}\\
+    \end{split}
+\end{equation*}
+
+\end{document}
