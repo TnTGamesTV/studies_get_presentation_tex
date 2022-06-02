@@ -1,0 +1,32 @@
+\documentclass[../../document.tex]{subfiles}
+\begin{document}
+
+\section*{Aufgabe 4}
+
+\subsection*{a) - Mittelwert}
+
+\begin{equation*}
+    \begin{split}
+       \bar{u} &= \frac{1}{\SI{10}{\milli\second}} \int_{0}^{10} \SI{2}{\frac{\volt}{\milli\second}} * t dt\\ 
+       &= \left\lvert \frac{\SI{2}{\volt}}{\SI{10}{\milli\second}} * \frac{t^2}{2} \right\rvert_{0}^{10} = \frac{\SI{1}{\volt}}{\SI{10}{\milli\second^2}} * t^2\\
+       \hat{u} (t = \SI{5}{\milli\second}) &= \frac{1}{\SI{10}{\milli\second^2}} * \SI{25}{\milli\second^2} = \SI{2,5}{\volt}\\
+       \hat{u} (t = \SI{10}{\milli\second}) &= \frac{1}{\SI{10}{\milli\second^2}} * \SI{100}{\milli\second^2} = \SI{10}{\volt}\\
+    \end{split}
+\end{equation*}
+
+\subsection*{b) - Effektivwert}
+
+\begin{equation*}
+    \begin{split}
+        u\cind{eff} &= \sqrt{\frac{1}{\SI{10}{\milli\second}} \int_{0}^{10} ( \SI{2}{\frac{\volt}{\milli\second}} * t )^2 dt}\\
+        &= \sqrt{\left\lvert \frac{\SI{4}{\volt^2}}{\SI{10}{\milli\second^3}} * \frac{t^3}{3} \right\rvert_0^{10} } = \sqrt{\frac{4}{\SI{30}{\milli\second^3}} * t\cind{1}^3 }\\
+        u\cind{eff} (t = \SI{5}{\milli\second}) &= \sqrt{\frac{4}{30} * 5^3} = \SI{4,08}{\volt}\\
+        u\cind{eff} (t = \SI{10}{\milli\second}) &= \sqrt{\frac{4}{30} * 10^3} = \SI{11,5}{\volt}\\
+    \end{split}
+\end{equation*}
+
+\subsection*{c) - Gleichrichtwerte}
+
+\( \left\lvert \bar{u} \right\rvert = \bar{u} \), keine negativen Anteile
+
+\end{document}
