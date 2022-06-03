@@ -26,7 +26,26 @@ Integrieren
 
 \subsection*{b)}
 
-?
+\[\bar{y} = \frac{1}{T} \int_{t\cind{0} + 0}^{t = t\cind{0}} u(t) dt\]
+
+Aufteilen in die zwei Funktionen
+
+\begin{itemize}
+    \item Funktion \(4 * e^{t - 1}\)
+    \item Funktion \(-2t+4\)
+\end{itemize}
+
+Integrieren
+
+\begin{equation*}
+    \begin{split}
+        \bar{y} &= \left[ 4 * e^{t-1} \right]_0^1 + \left[ 4t - t^2 \right]_0^2 \\
+        \Rightarrow \bar{y} &= \left[ 4 - 1,478 \right] + \left[ 4 \right]\\
+        \Rightarrow \bar{y} &= \SI{6,528}{\volt}\\
+        \left\lvert \bar{y} \right\rvert &= \bar{y}\\
+        y\cind{eff} &= \frac{\bar{y}}{\sqrt{2}} = \SI{4,616}{\volt}\\
+    \end{split}
+\end{equation*}
 
 \subsection*{c)}
 
